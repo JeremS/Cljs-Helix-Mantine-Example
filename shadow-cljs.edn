@@ -1,0 +1,33 @@
+{:deps true
+
+ :nrepl {:port 9000
+         :middleware []}
+
+
+ :dev-http {1420 ["resources/public"]
+            1421 ["resources/portfolio" "classpath:public"]}
+
+ :builds
+ {:app
+  {:target :browser
+   :output-dir "resources/public/js"
+   :asset-path "/js"
+   :js-options {:entry-keys ["module" "browser" "main"]
+                :js-provider :external
+                :external-index "src-js/main/gen/requires.js"
+                :external-index-format :esm}
+   :devtools {:reload-strategy :full
+              :preloads [app.dev]}
+   :modules {:main {:init-fn app.core/init}}}
+
+  :portfolio
+  {:target :browser
+   :output-dir "resources/portfolio/js"
+   :js-options {:entry-keys ["modules" "browser" "main"]
+                :js-provider :external
+                :external-index "src-js/portfolio/gen/requires.js"
+                :external-index-format :esm}
+   :devtools {:reload-strategy :full
+              :preloads [app.dev]}
+   :modules {:portfoliocljs {:init-fn app.portfolio/init}}}}}
+
