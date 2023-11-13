@@ -8,6 +8,6 @@ The goal is to have a working basic app that use helix, the mantine components l
 * In one terminal `bb run shadow:dev` start a shadow cljs watch
 * In another terminal `bb run rollup:dev` to start the js bundler
 
-Open [](http://localhost:1420/) to get to the app.
-Open [](http://localhost:1421/) to get to portfolio.
+Open the [local app](http://localhost:1420/) to get to the app.
+Open the [local portfolio](http://localhost:1421/) to get to portfolio.
 
