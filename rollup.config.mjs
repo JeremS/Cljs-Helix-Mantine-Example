@@ -44,6 +44,7 @@ export default [{
     plugins: pluginsConf,
     input: 'src-js/main/index.js',
     output: {
+        sourcemap: true,
         dir: 'resources/public/',
         entryFileNames: 'js/libs/[name].js',
         format: 'es'
@@ -53,6 +54,7 @@ export default [{
     plugins: pluginsConf,
     input: 'src-js/portfolio/index.js',
     output: {
+        sourcemap: true,
         dir: 'resources/portfolio/',
         entryFileNames: 'js/libs/[name].js',
         format: 'es'

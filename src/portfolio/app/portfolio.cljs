@@ -1,16 +1,17 @@
 (ns app.portfolio
   (:require
     [portfolio.ui :as ui]
-    app.scenes.button-scenes))
+    app.portfolio.scenes.button-scenes
+    app.portfolio.scenes.checkbox-scenes))
 
 
 
 
 (ui/start!
   {:config
-   {}})
-    ;:css-paths ["../main.css"]}})
-    ;:canvas-path "canvas.html"}})
+   {
+    :css-paths ["../main.css"]
+    :canvas-path "canvas.html"}})
 
 
 (defn init [])

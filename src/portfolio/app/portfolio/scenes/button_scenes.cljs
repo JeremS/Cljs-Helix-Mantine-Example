@@ -1,14 +1,12 @@
-(ns app.scenes.button-scenes
+(ns app.portfolio.scenes.button-scenes
   (:require
-    [applied-science.js-interop :as j]
+    [app.portfolio.utils :as u]
     [helix.core :as hc :refer [$]]
-    [helix.dom :as d]
-    [helix.hooks :as h]
     [portfolio.react-18 :refer-macros [defscene]]
     ["@mantine/core" :as mt]))
 
 
 (defscene simple-button
-  ($ mt/MantineProvider
+  ($ u/Provider {:defaultColorScheme "light"}
      ($ mt/Button "click me!!!")))
 

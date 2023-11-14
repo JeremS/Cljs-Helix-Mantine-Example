@@ -2,6 +2,8 @@
 
 The goal is to have a working basic app that use helix, the mantine components library and portfolio.
 
+## Disclaimer
+This is an experiment for now, the production build config doesn't exists. Use at your own peril.
 
 ## To start development
 * First get the npm deps `npm install`

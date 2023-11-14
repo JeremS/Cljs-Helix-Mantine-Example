@@ -28,8 +28,7 @@
 (defnc App []
   (j/let [^:js [opened {:keys [toggle]}]  (mth/useDisclosure)]
     ($ mantine/AppShell
-      {
-       :header #js {:height 60}
+      {:header #js {:height 60}
        :navbar #js {:width 100
                     :breakpoint "sm" :collapsed #js {:mobile (not opened)}}
        :padding "md"}
@@ -50,9 +49,6 @@
 
 (defn render
   []
-  ;; Render the UI into the HTML's <div id="app" /> element
-  ;; The view function `todomvc.views/todo-app` is the
-  ;; root view for the entire UI.
   (.render root
     ($ react/StrictMode
        ($ Main))))
