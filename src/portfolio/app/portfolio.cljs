@@ -11,7 +11,8 @@
   {:config
    {
     :css-paths ["../main.css"]
-    :canvas-path "canvas.html"}})
+    :canvas-path "canvas-light.html"}})
+    ;:canvas-path "canvas-dark.html"}})
 
 
 (defn init [])
